@@ -15,7 +15,7 @@ footer {
     background-color: white;
     margin-top: 50px;
     height: 100%;
-    width: 100%;
+    width: auto;
 }
 
 h1,
@@ -41,7 +41,7 @@ ul {
 .side-menu {
     position: fixed;
     height: 100%;
-    width: 100px;
+    width: 90px;
     margin: 0;
     background-color: #846e5e;
     transition: width 0.5;
@@ -79,8 +79,10 @@ ul {
     flex-direction: column;
     list-style-type: none;
     height: 100%;
-    padding-left: 20px;
+    padding-left: 17px;
 }
+
+
 
 .navItem {
     display: flex;
@@ -121,21 +123,93 @@ ul {
 }
 
 .page-out {
-    margin-left: 100px;
+    margin-left: 90px;
 }
 
 .page-in {
-    width: 1074px;
-    /* vertical-align: middle; */
-    /* padding: 30px; */
+    width: 100%;
     margin: 0 auto;
+    padding: 20px;
+    max-width: 1200px;
 }
 
+@media screen and (max-width: 768px) {
+
+    .logo-box {
+        display: none
+    }
+    
+    .logo {
+        display: none
+    }
+
+    .side-menu {
+    height: auto;
+    width: 100%;
+    padding: 20px 0;
+    transition: none;
+    position: relative; /* Add this line */
+
+    }
+
+    .side-menu:hover {
+    width: 100%;
+    }
+
+      .side-menu:hover .navItemName {
+    font-size: 12px;
+    }
+    
+    .navBar {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      padding: 0;
+      margin: 0;
+    }
+  
+    .navSection {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 30px;
+      background-color: transparent;
+      transition: none;
+    }
+  
+    .navItem {
+      margin: 0;
+    }
+  
+    .navItemName {
+      display: none;
+    }
+  
+    .navSection:hover {
+      background-color: #875837;
+      box-shadow: none;
+    }
+
+    .page-out {
+        margin-left: auto;
+    }
+    
+    .page-in {
+        width: 100%;
+        margin: auto;
+        padding: auto;
+        max-width: auto;
+    }
+
+  }
+
 .info {
+    width: 100%;
     display: flex;
     align-items: center;
     height: 65vh;
-    width: 1074px;
 }
 
 .info-avatar {
@@ -156,6 +230,7 @@ ul {
 
 .info-text {
     width: 100%;
+    padding: 45px;
     /* height: 100%; */
 }
 
@@ -216,13 +291,60 @@ ul {
     box-shadow: 0 7px 15px rgba(0, 0, 0, 0.3);
 }
 
+@media screen and (max-width: 768px) {
+    .info {
+      flex-direction: column;
+      height: auto;
+      align-items: flex-start;
+      padding: 20px;
+    }
+  
+    .info-avatar {
+      height: auto;
+      margin-bottom: 20px;
+    }
+  
+    .info-picture {
+      width: 200px;
+      height: 200px;
+    }
+  
+    .info-text {
+      width: 100%;
+      padding: 0;
+    }
+  
+    .info-name {
+      font-size: 30px;
+    }
+  
+    .info-smallBio {
+      font-size: 0.9rem;
+    }
+  
+    .info-links {
+      margin-top: 20px;
+    }
+  
+    .info-links-resume {
+      padding: 8px 20px;
+      font-size: 0.9rem;
+    }
+  
+    .info-socialList li a {
+      margin: 5px;
+      padding: 8px;
+      font-size: 1rem;
+    }
+  }
+
 .section-block {
     margin-top: 50px;
 }
 
 .section-container {
     padding: 50px;
-    /* width: 100%; */
+    width: 100%;
     background-color: white;
     border-radius: 50px;
     height: 100%;
@@ -256,7 +378,6 @@ ul {
 .section-box {
     background: white;
     border-radius: 50px;
-    height: 300px;
     width: 100%;
 }
 
@@ -290,9 +411,21 @@ ul {
     margin: 0;
 }
 
+
 .skillsGrid li p {
     margin-top: 10px;
 }
+
+@media screen and (max-width: 768px) {
+    .skillsGrid {
+      grid-template-columns: auto;
+      row-gap: 20px;
+    }
+  
+    .skillsGrid ul {
+      width: 100%;
+    }
+  }
 
 .project-box {
     display: flex;
@@ -344,6 +477,22 @@ ul {
     background: rgba(200, 184, 138, 0.3);
     border-radius: 7px;
     margin-bottom: 25px;
+}
+
+@media screen and (max-width: 768px) {
+  .section-container {
+    padding: 50px;
+  }
+
+  .contact-types {
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+
+  .contact-typeBox {
+    flex-basis: 45%;
+  }
 }
 
 /*.contactForm {
@@ -507,7 +656,6 @@ form input, form textarea
   }*/
 
 
-
   /************
   Contact Form In Footer
   *************/
@@ -560,7 +708,7 @@ form input, form textarea
   ----------------------------
   Send button micro animation
   ----------------------------
-  */
+  
   
   #main {
     position: static;
@@ -582,7 +730,7 @@ form input, form textarea
     font-size: 25px;
     color: #fff;
     line-height: 1;
-    /* padding: 20px 25px; */
+    padding: 20px 25px; 
     text-align: center;
     border-radius: 50px;
     border-style: none;
@@ -648,7 +796,7 @@ form input, form textarea
       transform: scale(0) rotateZ(-90deg);
     }
   }
-
+*/
 
 /************
 OLD SKILLS
