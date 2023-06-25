@@ -13,7 +13,7 @@ footer {
   justify-content: center;
   background-color: white;
   margin-top: 50px;
-  width: 100vw;
+  width: 100%;
   padding-left: 60px;
 }
 
@@ -459,13 +459,42 @@ form {
 }
 
 @media screen and (max-width: 768px) {
-
-  .logo-box {
-    display: none
+  body {
+    height: auto;
+    font-family: 'Poppins';
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    color: #7f7f7f;
+    background-color: #f7f7f7;
   }
   
-  .logo {
-    display: none
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    margin-top: 50px;
+    width: 100%; /* Adjust the value as needed */
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center; /* Center the text content */
+    box-sizing: border-box; /* Add this property to include padding in the width calculation */
+    padding: 0 20px; /* Add padding to create space around the content */
+  }
+  
+  h1,h2,h3 {
+    font-weight: 400;
+  }
+  
+  nav {
+    display: flex;
+    margin: auto;
+    height: 100%;
+  }
+  
+  ul {
+    padding: 0;
   }
 
   .side-menu {
@@ -473,16 +502,21 @@ form {
     width: 100%;
     padding: 10px;
     transition: none;
-    position: relative; /* Add this line */
-
+    position: fixed;
+    top: 0; /* Position the navbar at the top of the page */
+    overflow: hidden;
   }
 
   .side-menu:hover {
     width: 100%;
   }
 
-  .side-menu:hover .navItemName {
-    font-size: 12px;
+  .logo-box {
+    display: none
+  }
+  
+  .logo {
+    display: none
   }
   
   .navBar {
@@ -505,14 +539,14 @@ form {
   }
 
   .navItem {
-    margin: 0;
+    display: flex;
   }
 
   .navItemName {
-    display: none;
+    display: inline-block;
   }
 
-  .navSection:hover {
+  .navSection {
     background-color: #875837;
     box-shadow: none;
   }
@@ -521,13 +555,14 @@ form {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    margin-left: 1px;
+    margin-left: 0px;
   }
   
   .page-in {
     width: 100%;
     margin: auto;
-    padding: auto;
+    padding: 0;
+    padding-top: 5vh;
     max-width: auto;
   }
 
@@ -535,7 +570,7 @@ form {
     flex-direction: column;
     height: auto;
     align-items: flex-start;
-    padding: 0px;
+    padding-top: 10vh;
   }
 
   .info-avatar {
@@ -548,12 +583,12 @@ form {
   .info-picture {
     width: 190px;
     height: 190px;
-    margin-left: 25px; /* Adjust the value as needed */
+    margin-left: 40px; /* Adjust the value as needed */
   }
 
   .info-text {
     width: 100%;
-    padding: 0;
+    padding: 25px;
   }
 
   .info-name {
@@ -579,6 +614,56 @@ form {
     font-size: 1rem;
   }
 
+  .section-block {
+    margin-top: 50px;
+    width: 100%;
+  }
+  
+  .section-container {
+    padding: 35px;
+    background-color: white;
+    border-radius: 0;
+    height: 100%;
+    box-sizing: border-box;
+    width: 100%;
+  }
+  
+  .section-head {
+    width: 100%;
+  }
+  
+  .section-preTitle {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    font-size: 0.8em;
+    letter-spacing: 1.5px;
+    padding-left: 5vw;
+  }
+  
+  .section-preTitle:before {
+    display: block;
+    content: "";
+    width: 50px;
+    height: 1px;
+    margin-right: 20px;
+    background: #875837;
+  }
+
+  .section-grid {
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: .9rem;
+    line-height: 2;
+    padding-bottom: 40px;
+    padding-left: 80px;
+  }
+
+  .section-title {
+    margin-top: 5px;
+    padding-left: 5vw;
+  }
+
   .skillsGrid {
     grid-template-columns: auto;
     row-gap: 20px;
@@ -588,8 +673,18 @@ form {
     width: 100%;
   }
 
-  .section-container {
-    padding: 50px;
+  .project-box {
+    display: flex;
+    flex-direction: row;
+    border-radius: 50px;
+    padding: 35px;
+    margin-bottom: 50px;
+    border: 1px solid #eee;
+    transition: all 0.3s ease-in;
+  }
+  
+  .project-box h2 {
+    margin-top: 0;
   }
 
   .contact-types {
