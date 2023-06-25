@@ -82,20 +82,21 @@
         </div>
       </div>
 
-      <section class="section-about section-block" id="about">
+      <section class="section-block" id="about">
         <div class="section-head">
           <span class="section-preTitle">GET TO KNOW</span>
           <h2 class="section-title">ABOUT ME</h2>
         </div>
-        <div class="section-box">
-          <p>Experienced Software Engineering Manager with a proven ability to develop, motivate, and lead cross-functional teams in high pressure environments.<br/><br/>
-            
-            Demonstrated history of working with multiple languages, frameworks, and platforms to drive change and deliver results.<br/><br/>
-            
-            Knowledge of how to architect new strategies and products for operational efficiencies and growth.<br/><br/>
-            
-            Desire to deliver the best client experience through dedication and career passion.<br/><br/>
-          </p>
+        <div class="section-container">
+          <p>
+          Experienced Leader in Software Engineering with a track record of successfully cultivating, inspiring, and guiding diverse teams in fast-paced settings.<br/><br/>
+          Illustrated track record of leveraging various programming languages, frameworks, and platforms to drive transformation and achieve tangible outcomes.<br/><br/>
+          Proficient in crafting innovative strategies and products to optimize operations and foster organizational expansion.<br/><br/>
+          Passionate about delivering exceptional client experiences through unwavering commitment and a genuine love for the profession.<br/><br/>
+            <!--Experienced Software Engineering Manager with a proven ability to develop, motivate, and lead cross-functional teams in high pressure environments.
+            Demonstrated history of working with multiple languages, frameworks, and platforms to drive change and deliver results.
+            Knowledge of how to architect new strategies and products for operational efficiencies and growth.
+            Desire to deliver the best client experience through dedication and career passion.-->
         </div>
       </section>
 
@@ -149,7 +150,7 @@
           <div class="project-box">
             <div>
               <h2>Data Collection Tool</h2>
-              <p>Ageing architecture and security prompted need for a new data collection tool.<br/><br/>Technologies used: <span style="color: #86B049;">C#, ASP.NET, SQL SERVER, Kendo, JavaScript</span></p>
+              <p>Ageing architecture and security prompted need for a new data collection tool.<br/><br/>Technologies used: <span style="color: #86B049; letter-spacing: 1.5px;">C#, ASP.NET, SQL SERVER, Kendo, JavaScript</span></p>
               <ul>
                 <li>GAP analysis: Proprietary vs. SaaS</li>
                 <li>Platform requirements and architecture</li>
@@ -160,7 +161,7 @@
           <div class="project-box">
             <div>
               <h2>Integrations</h2>
-              <p>Technologies used: <span style="color: #86B049;">C#, API, buyout</span></p>
+              <p>Technologies used: <span style="color: #86B049; letter-spacing: 1.5px;">C#, API, buyout</span></p>
               <ul>
                 <li>GAP analysis: Proprietary data collection tool comparison</li>
                 <li>Integration with propeitary data collection and reporting with predictive dialing and workforce management tool</li>
@@ -170,7 +171,7 @@
           <div class="project-box">
             <div>
               <h2>Efficiencies</h2>
-              <p>Technologies used: <span style="color: #86B049;">C#, JavaScript, SSRS, </span></p>
+              <p>Technologies used: <span style="color: #86B049; letter-spacing: 1.5px;">C#, JavaScript, SSRS, </span></p>
               <ul>
                 <li>Identified issues and defined development solutions or operational best practices</li>
                 <li>Increased team communication, resposne rates</li>
@@ -190,98 +191,115 @@
           <h2>Get in touch</h2>
           <div class="contact-types">
             <div class="contact-typeBox">
+              <a href="mailto:daniel.hutto.tx@gmail.com">
               <i class="lni lni-envelope lni-lg contact-email"></i>
-              <a href="mailto:daniel.hutto.tx@gmail.com">daniel.hutto.tx@gmail.com</a>
+              <span><br />daniel.hutto.tx@gmail.com</span>
+            </a>
               <p>Email me</p>
             </div>
             <div class="contact-typeBox">
-              <i class="lni lni-calendar lni-lg contact-calendly"></i>
-              <a href="https://calendly.com/danielh_tx/30min" target="_blank">Calendly</a>
-              <p>Schedule a meeting</p>
+              <a href="https://calendly.com/danielh_tx/30min" target="_blank">
+                <i class="lni lni-calendar lni-lg contact-calendly"></i>
+                <span><br />Calendy</span>
+              </a>
+                <p>Schedule a meeting</p>
             </div>
           </div>
           <h2>Contact form</h2>
-            <div class="contactForm">
-              <!--<div class="form-header">
-                <h6 class="display">Get in Touch</h6>
-              </div>-->
-              <div id="form-container">
-                <form name="gform" id="gform" onsubmit="submitForm(event);">
-                  <input id="entry.1142062888" type="text" name="entry.1142062888" placeholder="Your Name" required="">
-                  <input id="entry.1075258341" type="email" name="entry.1075258341" placeholder="Email Address" required="">                  
-                  <textarea id="entry.1091277242" name="entry.1091277242" placeholder="Type your Message" required=""></textarea>
-                  <!--<input type="text" name="firstName" id="firstName" placeholder="Your Name" required>
-                  <input type="email" name="email" id="email" placeholder="Email Address" required>
-                  <textarea name="message" id="message" placeholder="Email Address" required></textarea>-->
-                  <div id="main">
-                    <input class="contactSend" type="submit" value="Send">
-                  </div>
-                </form>
+          <div class="contactForm" id="form-container">
+            <form name="gform" id="gform" onsubmit="submitForm(event);">
+              <div>
+                <input id="entry.1142062888" type="text" name="entry.1142062888" placeholder="Your Name" required="">
+                <span id="name-error" class="error-message"></span>
               </div>
-              <div id="success-message" style="display: none;">
-                Thank you for your submission!
+              <div>
+                <input id="entry.1075258341" type="email" name="entry.1075258341" placeholder="Email Address" required="">
+                <span id="email-error" class="error-message"></span>
               </div>
-
-            </div>
+              <div>
+                <textarea id="entry.1091277242" name="entry.1091277242" placeholder="Type your Message" required=""></textarea>
+                <span id="message-error" class="error-message"></span>
+              </div>
+              <input id="submit" class="contactSend" type="submit" value="Submit">
+            </form>
+          </div>
+              <div class="contactForm" id="success-message" style="display: none;">
+                <h2>Thank you for reaching out!</h2>
+              </div>
         </div>
       </section>
 
     </div>
-    <footer class="footer sticky-bottom" style="background-color:#ffffff;">
-      <div class="p-4">
-        <div class="container-fluid quote-container">
-          <div class="quotes" style="text-align:center;">
-          <p class="tag">Develop a passion for learning. If you do, you will never cease to grow.</p>
-          <p>© Daniel Hutto 2023</p>
-        </div>
-      </div>
-    </footer>
   </div>
 
+  <footer class="footer" style="background-color:#ffffff;">
+    <div>
+      <div style="text-align:center;">
+      <p class="tag">Ignite a passion for learning. If you do, you will never cease to grow.</p>
+      <p>© Daniel Hutto 2023</p>
+    </div>
+  </footer>
 
   <script>
     function submitForm(event) {
       event.preventDefault(); // Prevent the default form submission behavior
 
-     // Validate and sanitize user input
-      //var firstName = sanitizeInput(document.getElementById("firstName").value);
-      //var lastName = sanitizeInput(document.getElementById("lastName").value);
-      //var email = sanitizeInput(document.getElementById("email").value);
-      //var message = sanitizeInput(document.getElementById("message").value);
+      // Clear previous error messages
+      var errorMessages = document.querySelectorAll(".error-message");
+      errorMessages.forEach(function(message) {
+        message.textContent = "";
+      });
 
-      //// Perform additional validation if needed
-      //if (!validateEmail(email)) {
-      //  alert("Please enter a valid email address.");
-      //  return;
-      //}
+      // Validate and sanitize user input
+      var nameInput = document.getElementById("entry.1142062888");
+      var emailInput = document.getElementById("entry.1075258341");
+      var messageInput = document.getElementById("entry.1091277242");
+
+      var name = sanitizeInput(nameInput.value);
+      var email = sanitizeInput(emailInput.value);
+      var message = sanitizeInput(messageInput.value);
+
+      var isValid = true;
+
+      // Validate name field
+      if (name.trim() === "") {
+        document.getElementById("name-error").textContent = "Please enter your name";
+        isValid = false;
+      }
+
+      // Validate email field
+      if (!isValidEmail(email)) {
+        document.getElementById("email-error").textContent = "Please enter a valid email address";
+        isValid = false;
+      }
+
+      // Validate message field
+      if (message.trim() === "") {
+        document.getElementById("message-error").textContent = "Please enter a message";
+        isValid = false;
+      }
+
+      if (!isValid) {
+        return; // Stop form submission if any field is invalid
+      }
 
       // Prepare the form data
-      //var formData = new FormData();
       var formData = new FormData(document.getElementById("gform"));
+      //var formData = new FormData();
       //formData.append("entry.1142062888", yourName);
       //formData.append("entry.1075258341", email);
       //formData.append("entry.1091277242", message);
   
-      fetch("https://docs.google.com/forms/d/e/1FAIpQLSe8AklSyZodgcTdu2oX_1BbOlUssvt-OZPxoI5vL9rK9DWwHA/formResponse?", {
+      // Submit the form
+      fetch("https://docs.google.com/forms/d/e/1FAIpQLSe8AklSyZodgcTdu2oX_1BbOlUssvt-OZPxoI5vL9rK9DWwHA/formResponse", {
         method: "POST",
-        body: formData
-        //body: new URLSearchParams(formData)
+        body: formData,
+        mode: "no-cors"
       })
-        .then(response => {
-          if (response.ok) {
-            return response.json(); // Parse the response as JSON
-            //console.log("Form submitted successfully.");
-            //document.getElementById("form-container").style.display = "none";
-            //document.getElementById("success-message").style.display = "block";
-          } else {         
-            throw new Error("Form submission failed.");
-            //console.error("Form submission failed.");
-          }
-        })
         .then(data => {
           console.log("Form data:", formData); // Log the form data to the console
           console.log("Response data:", data); // Log the response data to the console
-  
+
           document.getElementById("form-container").style.display = "none";
           document.getElementById("success-message").style.display = "block";
         })
@@ -289,6 +307,10 @@
           console.error("Error:", error);
         });
     }
+
+    // Add an event listener to the form submit button
+    document.getElementById("submit").addEventListener("click", submitForm);
+
     // Sanitize user input to prevent XSS attacks
     function sanitizeInput(input) {
       // Remove leading and trailing whitespace
@@ -305,17 +327,12 @@
       return sanitizedInput;
     }
 
-        //// Validate email format
-        //function validateEmail(email) {
-        //  // Implement your own email validation logic here
-        //  var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        //  return emailRegex.test(email);
-        //}
+    // Check if the email is valid using a regular expression
+    function isValidEmail(email) {
+      var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      return emailRegex.test(email);
+    }
   </script>
-  
-
-
-
 </body>
 
 </html>
