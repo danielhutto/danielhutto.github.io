@@ -1,3 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;1,400&amp;display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.lineicons.com/2.0/LineIcons.css" rel="stylesheet">
+  <title>Daniel's website</title>
+</head>
+
+<body>
+
+  <div class="side-menu">
+    <div class="logo-box">
+      <p class="logo">DH</p>
+    </div>
+    <nav>
+      <ul class="navBar">
+        <li class="navSection">
+          <a href="#home" class="navItem">
+            <i class="lni lni-home"></i>
+            <span class="navItemName">HOME</span>
+          </a>
+        </li>
+        <li class="navSection">
+          <a href="#about" class="navItem">
+            <i class="lni lni-user"></i>
+            <span class="navItemName">ABOUT</span>
+          </a>
+        </li>
+        <li class="navSection">
+          <a href="#skills" class="navItem">
+            <i class="lni lni-code-alt"></i>
+            <span class="navItemName">SKILLS</span>
+          </a>
+        </li>
+        <li class="navSection">
+          <a href="#works" class="navItem">
+            <i class="lni lni-briefcase"></i>
+            <span class="navItemName">WORKS</span>
+          </a>
+        </li>
+        <li class="navSection">
+          <a href="#contact" class="navItem">
+            <i class="lni lni-phone"></i>
+            <span class="navItemName">CONTACT</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="page-out">
+    <div class="page-in">
+
+      <div class="info" id="home">
+        <div class="info-avatar">
+          <img class="info-picture" src="images\dhgh.png?size=200" alt="avatar">
+        </div>
+        <div class="info-text">
+          <p>Hi there! I'm</p>
+          <h1 class="info-name">Daniel Hutto</h1>
+          <p class="info-smallBio">Operations and Development Leader
+          </p>
+          <div class="info-links">
+            <a class="info-links-resume" target="_blank"
+              href="files\DanielHuttoResume.pdf">Resumé</a>
+            <ul class="info-socialList">
+              <li>
+                <a href="https://www.linkedin.com/in/daniel-hutto-110a0a85/" target="_blank" alt="linkedin">
+                  <i class="lni lni-linkedin-original"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <section class="section-block" id="about">
+      </section>
+
+      <section class="section-block" id="skills">
+      </section>
+
+      <section class="section-block" id="works">
+      </section>
+
+      <section class="section-block" id="contact">
+      </section>
+    </div>
+  </div>
+
+  <footer class="footer" style="background-color:#ffffff;">
+    <div style="text-align:center;">
+    </div>
+  </footer>
+
+</body>
+
+</html>
+
+<style>
 body {
   height: auto;
   font-family: 'Poppins';
@@ -510,7 +616,6 @@ form {
     width: 100%;
   }
 
-  
   .logo-box {
     display: none
   }
@@ -553,9 +658,9 @@ form {
   }
 
   .navItem:active {
-    background-color: #875837;
-    transition: background-color 0.2s;
-  }
+  background-color: #875837;
+  transition: background-color 0.2s;
+}
 
   .navItemName {
     font-size: 12px;
@@ -577,7 +682,7 @@ form {
     width: 100%;
     margin: auto;
     padding: 0;
-    padding-top: 3vh;
+    padding-top: 5vh;
     max-width: auto;
   }
 
@@ -585,7 +690,7 @@ form {
     flex-direction: column;
     height: auto;
     align-items: flex-start;
-    padding-top: 9vh;
+    padding-top: 10vh;
   }
 
   .info-avatar {
@@ -630,7 +735,7 @@ form {
   }
 
   .section-block {
-    margin-top: 45px;
+    margin-top: 50px;
     width: 100%;
   }
   
@@ -712,3 +817,5 @@ form {
     flex-basis: 100%;
   }
 }
+
+</style>
