@@ -114,6 +114,10 @@ ul {
   display: block;
 }
 
+.mobileNav {
+  display: none;
+}
+
 .page-out {
   margin-left: 90px;
 }
@@ -475,12 +479,12 @@ form {
     align-items: center;
     background-color: white;
     margin-top: 50px;
-    width: 100%; /* Adjust the value as needed */
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
-    text-align: center; /* Center the text content */
-    box-sizing: border-box; /* Add this property to include padding in the width calculation */
-    padding: 0 20px; /* Add padding to create space around the content */
+    text-align: center;
+    box-sizing: border-box;
+    padding: 0 20px; 
   }
   
   h1,h2,h3 {
@@ -489,7 +493,7 @@ form {
   
   nav {
     display: flex;
-    margin: auto;
+    margin: 0;
     height: 100%;
   }
   
@@ -500,17 +504,20 @@ form {
   .side-menu {
     height: auto;
     width: 100%;
-    padding: 10px;
+    padding: 0;
     transition: none;
     position: fixed;
-    top: 0; /* Position the navbar at the top of the page */
+    top: 0;
   }
 
   .side-menu:hover {
     width: 100%;
   }
 
-  
+  .side-menu:hover .navItemName {
+    font-size: 12.5px;
+  }
+
   .logo-box {
     display: none
   }
@@ -524,20 +531,24 @@ form {
     flex-direction: row;
     padding: 0;
     margin: 0;
-    overflow-x: auto;
   }
 
   .navSection {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 30px;
+    height: 45px;
     border-radius: 0px;
     transition: none;
     padding: 0;
     margin: 0;
   }
   
+  .navSection:hover {
+    background-color: #875837;
+    box-shadow: none;
+  }
+
   .navItem {
     display: flex;
     flex-direction: row;
@@ -545,7 +556,8 @@ form {
     align-items: center;
     position: relative;
     padding: 0;
-    margin: 0;
+    margin: 0 2px;
+    flex-grow: 1;
   }
 
   .navItem i {
@@ -558,12 +570,13 @@ form {
   }
 
   .navItemName {
-    font-size: 12px;
+    font-size: 12.5px;
     display: block;
     text-align: center;
-    left: 50%;
-    transform: translateX(-25%);
     width: 100%;
+    height: 100%;
+    padding: 0px;
+    margin: 0 10px;
   }
 
   .page-out {
