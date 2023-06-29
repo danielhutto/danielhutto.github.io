@@ -114,10 +114,6 @@ ul {
   display: block;
 }
 
-.mobileNav {
-  display: none;
-}
-
 .page-out {
   margin-left: 90px;
 }
@@ -462,7 +458,7 @@ form {
   margin-top: 5px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
   body {
     height: auto;
     font-family: 'Poppins';
@@ -515,7 +511,7 @@ form {
   }
 
   .side-menu:hover .navItemName {
-    font-size: 12.5px;
+    font-size: 12px;
   }
 
   .logo-box {
@@ -570,13 +566,13 @@ form {
   }
 
   .navItemName {
-    font-size: 12.5px;
+    font-size: 12px;
     display: block;
     text-align: center;
     width: 100%;
     height: 100%;
     padding: 0px;
-    margin: 0 10px;
+    margin: 0 8px;
   }
 
   .page-out {
@@ -589,16 +585,16 @@ form {
   .page-in {
     width: 100%;
     margin: auto;
+    /*width: 100%;
+    margin: auto;*/
     padding: 0;
-    padding-top: 3vh;
-    max-width: auto;
   }
 
   .info {
     flex-direction: column;
     height: auto;
     align-items: flex-start;
-    padding-top: 9vh;
+    padding-top: 10vh;
   }
 
   .info-avatar {
@@ -645,6 +641,7 @@ form {
   .section-block {
     margin-top: 45px;
     width: 100%;
+    /*width: 145%*/
   }
   
   .section-container {
