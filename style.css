@@ -280,7 +280,6 @@ ul {
   margin: 0;
 }
 
-
 .skillsGrid li p {
   margin-top: 0px;
 }
@@ -297,6 +296,10 @@ ul {
 
 .project-box h2 {
   margin-top: 0;
+}
+
+.project-box ul {
+  padding-left: 25px;
 }
 
 .contact-types {
@@ -360,15 +363,6 @@ ul {
   padding: 10px;
   border-radius: 2px;
   text-align: center;
-}
-
-.contactForm h1 {
-  background: #875837;
-  font-size: 140%;
-  font-weight: 300;
-  text-align: center;
-  color: #fff;
-  margin: -16px -16px 16px -16px;
 }
 
 .contactForm input[type="text"],

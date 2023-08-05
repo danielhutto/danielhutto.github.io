@@ -89,3 +89,30 @@ function isValidEmail(email) {
     var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return emailRegex.test(email);
 }
+
+// Get all the navigation items
+const navItems = document.querySelectorAll('.navItem');
+
+// Function to remove the active class from a navigation item
+function removeActiveClass(navItem) {
+  navItem.classList.remove('active');
+}
+
+// Add click event listener to each navigation item
+navItems.forEach((navItem) => {
+  navItem.addEventListener('click', function() {
+    // Remove the active class from all navigation items
+    navItems.forEach((item) => {
+      item.classList.remove('active');
+    });
+
+    // Add the active class to the clicked navigation item
+    this.classList.add('active');
+
+    // Remove the active class after 2 seconds (adjust the delay as needed)
+    setTimeout(() => {
+      removeActiveClass(this);
+    }, 1000);
+  });
+});
+
