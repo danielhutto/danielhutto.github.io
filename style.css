@@ -1,30 +1,40 @@
+:root {
+  --primary-color: #85634a;
+  --secondary-color: #875837;
+  --light-color: #f7f7f7;
+  --dark-color: #7f7f7f;
+  --gray-color: #737373;
+}
+
+
+/* General styles */
 body {
   height: auto;
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   font-weight: 400;
   margin: 0;
   padding: 0;
-  color: #7f7f7f;
+  color: #737373;
   background-color: #f7f7f7;
 }
 
 footer {
   display: flex;
   justify-content: center;
-  background-color: white;
+  background-color: #fff;
   margin-top: 50px;
   width: 100%;
-  padding-left: 80px;
+  padding: 0 80px;
 }
 
 h1,h2,h3 {
   font-weight: 400;
 }
 
+/* Navigation styles */
 nav {
   display: flex;
   margin: auto;
-  height: 100%;
 }
 
 ul {
@@ -37,8 +47,7 @@ ul {
   width: 90px;
   margin: 0;
   background-color: #846e5e;
-  transition: width 0.5;
-  -webkit-transition: width 0.3s;
+  transition: width 0.3s;
 }
 
 .side-menu:hover {
@@ -47,8 +56,10 @@ ul {
 
 .side-menu:hover .navItemName {
   font-size: 12px;
+  transition-duration: .15s;
 }
 
+/* Logo styles */
 .logo-box {
   display: flex;
   align-self: center;
@@ -71,7 +82,6 @@ ul {
   display: flex;
   flex-direction: column;
   list-style-type: none;
-  height: 100%;
   padding-left: 17px;
 }
 
@@ -80,7 +90,6 @@ ul {
   align-items: center;
   text-decoration: none;
   color: white;
-  align-items: center;
   margin-left: 10px;
   margin-right: 10px;
   letter-spacing: 1.5px;
@@ -91,15 +100,13 @@ ul {
   align-items: center;
   height: 50px;
   margin: 20px 30px 10px 10px;
-  align-items: center;
   border-radius: 10px;
-  transition: 0.3s;
-  -webkit-transition: all 0.55s;
+  transition: all 0.55s;
 }
 
 .navSection:hover {
   background-color: #875837;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
 }
 
 .navItemName {
@@ -114,6 +121,7 @@ ul {
   display: block;
 }
 
+/* Page content styles */
 .page-out {
   margin-left: 90px;
 }
@@ -125,6 +133,7 @@ ul {
   max-width: 1200px;
 }
 
+/* Info section styles */
 .info {
   width: 100%;
   display: flex;
@@ -211,6 +220,7 @@ ul {
   box-shadow: 0 7px 15px rgba(0, 0, 0, 0.3);
 }
 
+/* Section styles */
 .section-block {
   margin-top: 50px;
 }
@@ -287,10 +297,11 @@ ul {
 .project-box {
   display: flex;
   flex-direction: row;
+  background-color: white;
   border-radius: 50px;
-  padding: 50px;
-  margin-bottom: 50px;
-  border: 1px solid #eee;
+  padding: 35px;
+  margin-bottom: 40px;
+  border: 1px solid #d7d7d7;
   transition: all 0.3s ease-in;
 }
 
@@ -298,10 +309,15 @@ ul {
   margin-top: 0;
 }
 
-.project-box ul {
-  padding-left: 25px;
+.project-box p {
+  padding-left: 10px;
 }
 
+.project-box ul {
+  padding-left: 30px;
+}
+
+/* Contact section styles */
 .contact-types {
   display: flex;
   justify-content: space-evenly;
@@ -313,7 +329,7 @@ ul {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  border: 1px solid #dadada;
+  border: 1px solid rgb(215, 215, 215);
   width: 40%;
   margin: 10px;
   padding: 20px 20px 0 20px;
@@ -455,7 +471,7 @@ form {
 @media screen and (max-width: 900px) {
   body {
     height: auto;
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     font-weight: 400;
     margin: 0;
     padding: 0;
@@ -474,7 +490,7 @@ form {
     margin-right: auto;
     text-align: center;
     box-sizing: border-box;
-    padding: 0 20px; 
+    padding: 5px 20px; 
   }
   
   h1,h2,h3 {
@@ -484,7 +500,7 @@ form {
   nav {
     display: flex;
     margin: 0;
-    height: 100%;
+    height: auto;
   }
   
   ul {
@@ -497,7 +513,6 @@ form {
     padding: 0;
     transition: none;
     position: fixed;
-    top: 0;
   }
 
   .side-menu:hover {
@@ -508,12 +523,8 @@ form {
     font-size: 12px;
   }
 
-  .logo-box {
-    display: none
-  }
-  
-  .logo {
-    display: none
+  .logo-box, .logo {
+    display: none;
   }
 
   .navBar {
@@ -535,7 +546,6 @@ form {
   }
   
   .navSection:hover {
-    background-color: #875837;
     box-shadow: none;
   }
 
@@ -601,7 +611,7 @@ form {
   .info-picture {
     width: 190px;
     height: 190px;
-    margin-left: 40px; /* Adjust the value as needed */
+    margin-left: 40px;
   }
 
   .info-text {
