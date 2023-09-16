@@ -188,7 +188,7 @@ nav {
   text-align: center;
   text-decoration: none;
   padding: 10px 30px;
-  border-radius: 40px;
+  border-radius: 20px;
   background-color: var(--primary-brown);
   color: var(--primary-white);
   letter-spacing: 2px;
@@ -235,10 +235,8 @@ nav {
   height: 100%;
 }
 
-.section-contianer p {
-  padding: 50px;
-  line-height: 1.4;
-  font-size: 16px;
+.section-container p {
+  padding: 5px;
 }
 
 .section-head {
@@ -257,8 +255,8 @@ nav {
 .section-preTitle:before {
   display: block;
   content: "";
-  width: 50px;
-  height: 1px;
+  width: 60px;
+  height: .5px;
   margin-right: 20px;
   background: var(--secondary-brown);
 }
@@ -435,7 +433,7 @@ nav {
   padding: 3%;
   background: var(--primary-brown);
   border-bottom: 2px solid var(--primary-brown);
-  border-radius: 23px;
+  border-radius: 20px;
   border-top-style: none;
   border-right-style: none;
   border-left-style: none;
@@ -683,8 +681,8 @@ form {
   .section-preTitle:before {
     display: block;
     content: "";
-    width: 50px;
-    height: 1px;
+    width: 60px;
+    height: .5px;
     margin-right: 20px;
     background: var(--secondary-brown);
   }
@@ -734,5 +732,10 @@ form {
 
   .contact-typeBox {
     flex-basis: 100%;
+  }
+
+  .contactForm input[type="submit"],
+  .contactForm input[type="button"] {
+    width: 60%;
   }
 }
